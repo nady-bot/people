@@ -1,0 +1,124 @@
+
+
+.products .body{
+    
+    
+    background-image: url("../images/المنتجات/Layer 30.png");
+     background-size:  auto 90% ;
+   background-repeat: no-repeat ; 
+   background-position: bottom  center ; 
+
+   padding-top: 30px ; ;
+   display :grid ; 
+   grid-template-rows : auto auto 1fr  ;
+
+}
+
+.products .body div   {
+   width: 100% ; 
+   display: flex ;  
+}
+
+.products .body .one   {
+     justify-content : space-around ; 
+     padding : 0 20px 20px 0 ; 
+}
+.products .body .two   {
+   padding : 0 20px ; 
+   justify-content : space-between ; 
+}
+.products .body .three   {
+   align-items :flex-end ; 
+   justify-content : space-between ;
+}
+
+.products .body .one img  ,  
+.products .body .two img  {
+   cursor : pointer;  
+}
+
+.products .body div img {
+   width: 20% ;  
+}
+
+
+
+
+
+
+.audio-products .body , 
+.audio2-products .body , 
+.body-products .body , 
+.optical-products .body   {
+
+   display : grid ;
+   grid-template-rows : 1fr auto; 
+   
+
+}
+
+.audio-products .body .one ,
+.audio2-products .body .one ,
+.body-products .body .one ,
+.optical-products .body .one{
+   padding : 30px 30px ; 
+   display : grid  ;
+   grid-template-columns : repeat(3 , 1fr)  ; 
+   gap: 30px ;
+   align-content: center ;
+
+}
+
+.audio-products .body .one div ,
+.audio2-products .body .one div ,
+.body-products .body .one div ,
+.optical-products .body .one div   {
+
+  background-image: url("../images/audio/قالب\ كبير.png") ;
+  background-position: center;
+  padding : 10px 0 ; 
+  text-align : center ; 
+  font-size: 25px  ;
+  border-radius : 10px ; 
+  box-shadow : 1px 1px 5px rgb(114, 114, 114) ; 
+
+}
+
+.audio-products .body .one div  img ,
+.audio2-products .body .one div  img ,
+.body-products .body .one div  img ,
+.optical-products .body .one  div img   {
+  width: 50% ;
+}
+
+.audio-products .body .one div  button  , 
+.audio2-products .body .one div  button  , 
+.body-products .body .one div  button  , 
+.optical-products .body .one  div button   {
+
+  background-color: #FBA30B ; 
+  padding : 5px 0  ;
+  margin : 10px 0 ; 
+  font-size : 18px ;  
+  width: 90% ; 
+  cursor : pointer; 
+  border: none ;
+  border-radius : 10px ; 
+
+}
+
+.audio-products .body .two ,
+.audio2-products .body .two ,
+.body-products .body .two ,
+.optical-products .body .two     {
+
+   display : flex ; 
+   align-items : center; ; 
+}
+
+.audio-products .body .two img , 
+.audio2-products .body .two img , 
+.body-products .body .two img , 
+.optical-products .body .two  img    {
+  width: 15%  ; 
+}

@@ -1,0 +1,36 @@
+
+
+.contact {
+
+    background-image: url("../images/contact/كتابة\ رساله.png") ,
+                    url("../images/contact/عليك\ ان\ تعلم\ انك\ سوف\ \ تحصل\ علي\ إجابة\ سوالك\ بشكل\ مباشر\ وفوري\ ..png") ,    
+                    url("../images/contact/تلفوني.png")  ,
+                    url("../images/contact/Layer\ 22.png") , 
+                    url("../images/contact/Layer\ 21.png")   ; 
+
+    background-size : 10% , 10% ,  25% , 20% , 40%      ; 
+    background-position: 12.5% 54% , 12%  40%  ,  bottom left ,55% 35%    ,center bottom   ;
+    background-repeat: no-repeat ; 
+
+}
+.contact .body{
+    display: flex ;
+    justify-content :end ; 
+    align-items: center ; 
+}
+
+.contact .body div  {
+    text-align: end  ; 
+    padding : 20px ; 
+}
+
+.contact p {
+    text-align: center ;
+    font-weight: bolder ; 
+    font-size : 30px ; 
+    padding : 20px 0  ; 
+}
+
+.contact a {
+    display: block; 
+}

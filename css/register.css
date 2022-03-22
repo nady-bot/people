@@ -1,0 +1,107 @@
+
+.register .body ,
+.payingElectron .body 
+ {
+    position: relative ; 
+    background-image: url("../images/register/خلفية لون.png") ;
+}
+
+
+.register .one {
+    
+    padding : 10px 80px ; 
+    display : grid ; 
+    grid-template-columns : 1fr 1fr ; 
+    gap: 40px ;
+}
+
+.register .one .right  , 
+.register .one .left ,
+.payingElectron .one .form
+{
+  direction : rtl ; 
+  padding : 10px ;
+  font-size : 18px ; 
+}
+
+.register .title , 
+.payingElectron .title
+{
+    text-align : center ; 
+    padding : 10px  0  15px ; 
+}
+.register .title .p-one  ,
+.payingElectron .title .p-one  
+{
+    font-size : 30px
+}
+.register .title .p-two , 
+.payingElectron .title .p-two 
+{
+    font-size : 15px
+}
+
+.register .one .right .div-input,
+.payingElectron .one .form .div-input
+ {
+     display : flex ; 
+}
+
+.register .one .right div button , 
+.payingElectron .one .form div button 
+ {
+     width : 20% ; 
+     background-color: rgb(32, 165, 5) ; 
+     border: none ;
+     border-radius: 5px ;
+}
+
+.register .one .right div button img , 
+.payingElectron .one .form div button img 
+ 
+ {
+    height: 60% ;
+    vertical-align : middle ; 
+}
+
+.register .two  , 
+.payingElectron .two 
+{
+
+    width : 50% ;
+    position : absolute ;
+    bottom : 0; 
+    left : 0 ; 
+    display : flex ;
+    justify-content : space-between ; 
+    align-items : center   ; 
+}
+
+.register .two img  , 
+.payingElectron .two img 
+{
+      width:  40% ;
+}
+
+.to-paying , .to-confirmedElectron {
+    cursor : pointer; 
+}
+.payingElectron .body   
+{
+   display: flex ; 
+   justify-content : center;  
+}
+
+.payingElectron .body .one 
+{
+   width : 50% ; 
+}
+ 
+.payingElectron .two 
+{
+    width : 100% ;
+}
+
+.payingElectron .two img{
+    width : 16% ; 
+}

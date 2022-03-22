@@ -1,0 +1,77 @@
+
+
+.paying .body .one ,
+.receipt .body .one 
+ {
+
+    height: 30% ;  
+    display : flex ; 
+    justify-content :center; 
+    align-items : center; 
+    font-size : 50px ; 
+}
+
+.paying .body .two, 
+.receipt .body .two 
+{
+    height: 50% ;  
+    display : flex ; 
+    justify-content :space-evenly ; 
+    align-items : center; 
+    font-size : 40px ; 
+    text-align : center; 
+}
+
+.paying .body .two div ,
+.receipt .body .two div   ,
+.confirmed .body .one  , 
+.confirmedElectron .body .one   
+ {
+  background-color : #B8E0E5 ; 
+  border-radius: 10px ;
+  padding  : 20px 10px ; 
+  cursor: pointer;
+}
+
+ 
+.paying .body .two div p  ,
+.receipt .body .two div p  
+  {
+  color : black ; 
+  padding-bottom    : 10px ; 
+}
+ 
+
+.paying .body .two img ,
+.receipt .body .two img 
+{
+  width : 50% ;
+}
+
+.confirmed .body  , 
+.confirmedElectron .body  
+{
+    display :flex ; 
+    justify-content :center ; 
+    align-items : center; 
+}
+
+.confirmed .body .one  , 
+.confirmedElectron .body .one    
+{
+     
+    background-image : url("../images/paying/Layer 100.png")  ; 
+    font-size : 50px ; 
+    text-align : center ; 
+    padding : 20px 40px ; 
+    cursor: auto ;
+
+}
+
+.confirmed .body .one .p-one , 
+.confirmedElectron .body .one .p-one   
+ {
+     
+    color :red ; 
+
+}
