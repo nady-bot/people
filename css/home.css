@@ -8,7 +8,7 @@
 }
 
 .home .language{
-    color: #f00 ;
+    color: #fff ;
     padding : 10px 20px ; 
     font-size : 20px ; 
 }
@@ -16,20 +16,16 @@
 
 .home .container {
      
-    width:  110px  ;
-    height :  110px  ;
+    width:  11%  ;
     position: relative ;
 }
 
 .home .two{
-    width:  140px  ;
-    height :  140px  ;
+    width:  14%   ;
 }
 
-.home .container img , .home .container p {
-   
+.home .container .img_2 , .home .container p {
     position: absolute; 
-
 }
 
 .home .container p {
@@ -62,18 +58,18 @@
 
 
 .home .one{
-    top : 16% ;
-    left : 40px ; 
+    top : 9% ;
+    left : 4%  ; 
 }
 .home .two{
-    top : 9.6%  ;
-    left : 125px ; 
+    top : 1%  ;
+    left : 12.5% ; 
 }
 .home .four{
-    top : -38.4%  ;
-    left : 250px ; 
+    top : -46.4%  ;
+    left : 25% ; 
 }
 .home .three{
-    top : -9.4%  ;
-    left : 330px ; 
+    top : -17.4%  ;
+    left : 33% ; 
 }
