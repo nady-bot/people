@@ -39,8 +39,11 @@ p{
     align-items : center; 
 }
 
+
+
 .arrow{
     cursor : pointer; 
+    width : 4%; 
 }
 
 .footer img   
@@ -82,3 +85,26 @@ p{
     display : none;
 }
 
+
+
+@media screen and (max-width: 600px) {
+
+    .arrow , .list-name{
+        width : 22px ; 
+    }
+    .list-nameAll{
+        width : 90px ; 
+    }
+
+    .header div p ,
+    .body .two p 
+    { 
+        font-size : 20px  ;  
+    }
+
+}
+
+@media screen and (max-width: 768px) {
+
+
+}

@@ -87,3 +87,31 @@
     
 
 }
+
+
+@media screen and (max-width: 600px) {
+
+    .about .body , 
+    .questions .body   
+    {
+
+        font-size: 16px ; 
+
+    }
+
+    .questions .body .bg-transparent div  {
+
+        width : 90%;
+        padding : 15px  ; 
+        font-size:16px ;
+        border-radius : 30px  ; 
+        
+    
+    }
+
+}
+
+@media screen and (max-width: 768px) {
+
+
+}
