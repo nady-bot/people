@@ -81,6 +81,9 @@ margin-top : 20px ;
 @media screen and (max-width: 600px) {
 
 
+    .home .cont-icon{ 
+        margin-top: 15% ;  
+    }
     
     .home .container {
         width:  13%  ;
