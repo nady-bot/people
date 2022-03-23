@@ -13,10 +13,16 @@
     font-size : 20px ; 
 }
 
+.home .cont-icon{
+     
+     
+    display :flex ;  
+    margin-top: 5% ;  
+}
 
 .home .container {
      
-    width:  11%  ;
+    width:  10%  ;
     position: relative ;
 }
 
@@ -29,12 +35,16 @@
 }
 
 .home .container p {
-    top:    55%     ;
+    top:    35%     ;
     left : 30%   ; 
     color: white;
     font-size: 1.5rem ; 
     cursor: pointer; 
 
+}
+
+.home .two p {
+    top:    55%     ;
 }
 
 
@@ -45,9 +55,7 @@
 } 
 
 .home .container .img_2  {
-  
     width: 30%;
-
 }
 
 .home .container .img_1  {
@@ -57,19 +65,56 @@
 }
 
 
-.home .one{
-    top : 9% ;
-    left : 4%  ; 
-}
-.home .two{
-    top : 1%  ;
-    left : 12.5% ; 
+
+ .home .two{
+    margin-top : 40px ;    
 }
 .home .four{
-    top : -46.4%  ;
-    left : 25% ; 
+margin-top : 60px ;    
 }
 .home .three{
-    top : -17.4%  ;
-    left : 33% ; 
+margin-top : 20px ;    
+}  
+
+
+
+@media screen and (max-width: 600px) {
+
+
+    
+    .home .container {
+        width:  13%  ;
+    }
+    
+    .home .two{
+        width:  18%   ;
+    }
+    
+    
+    .home .container p {
+        top:    25%     ;
+        font-size: 0.8rem ; 
+    }
+    
+    .home .two p  , 
+    .home .four p 
+    {
+        top:    45%     ;
+        left: 12%  ; 
+    }
+    
+    
+    .home div .img_2  {  
+    
+        top: 14%    ;
+        left : 35%    ; 
+    } 
+ 
+ 
+
+}
+
+@media screen and (max-width: 768px) {
+
+
 }
