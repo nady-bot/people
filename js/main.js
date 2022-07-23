@@ -1,19 +1,79 @@
 
-import {arrayOfQuestions , getProductCategory  , setProductCategory } from "./data.js"
+import { arrayOfQuestions, getProductCategory, setProductCategory } from "./data.js"
+import {
+    generateObject, displayAlert, checkIfInputNotEmpty,
+    dispalayGridAndHidden, dispalayBlockAndHidden,
+    fetchResponseGet, fetchResponsePost, deleteInputContent , 
+    addToTable_electron, addToTable_home, addProduct
+} from "./utils.js"
+
+import "./login.js"
+import "./massage.js"
+import "./admin.js"
 
 
 
-let flagProduct = "audioProducts" ; 
+let flagProduct = "audioProducts";
+let userData = {};
 
 
-let home = document.querySelector(".home  ");
-let toProduct = document.querySelector(".home .one p");
-let toAbout = document.querySelector(".home .three p");
-let toContact = document.querySelector(".home .four p");
+fetchResponseGet("nn", (objData) => {
 
+    if (objData.success == true) {
+        objData.data.forEach((obj) => {
+            addProduct(obj);
+        });
+    } else {
+        displayAlert("alert_error", objData.error);
+    }
+
+}, () => {
+    displayAlert("alert_error", "database not avilable ");
+});
+
+fetchResponseGet("nn", (objData) => {
+
+    if (objData.success == true) {
+        objData.data.forEach((obj) => {
+            addToTable_home(obj);
+        });
+    } else {
+        displayAlert("alert_error", objData.error);
+    }
+}, () => {
+    displayAlert("alert_error", "database not avilable ");
+});
+
+fetchResponseGet("nn", (objData) => {
+
+    if (objData.success == true) {
+        objData.data.forEach((obj) => {
+            addToTable_electron(obj);
+        });
+    } else {
+        displayAlert("alert_error", objData.error);
+    }
+
+}, () => {
+    displayAlert("alert_error", "database not avilable ");
+})
+
+
+export let home = document.querySelector(".home  ");
+let toProduct = document.querySelector(".home .one img");
+let toAbout = document.querySelector(".home .three img");
+let toContact = document.querySelector(".home .four img");
+let toLogin_register = document.querySelector(".home  .language .loginOrReg");
+
+
+let login_register = document.querySelector(".login-register  ");
+let arrowLogin = document.querySelector(".login-register .header img ");
 
 let contact = document.querySelector(".contact ");
 let arrowContact = document.querySelector(".contact .header img ");
+let massage = document.querySelector(".contact .massage-container  ");
+let massenger = document.querySelector(".contact .massenger");
+let showMassenger = 0;
 
 
 let products = document.querySelector(".products  ");
@@ -44,12 +104,12 @@ let arrowOpticalProducts = document.querySelector(".optical-products .header img
 let about = document.querySelector(".about  ");
 let arrowAbout = document.querySelector(".about .header img");
 let q_About = document.querySelectorAll(".about .body .one  p");
+let toContactFromAbout = document.querySelector(".about .body .two .img-two ");
 
 
 let questions = document.querySelector(".questions  ");
 let arrowQuestions = document.querySelector(".questions .header img");
-let p_Questions = document.querySelector(".questions .body .bg-transparent p");
-let p_Answer = document.querySelector(".questions .body .bg-transparent div p");
+
 
 let register = document.querySelector(".register  ");
 let registerInput = document.querySelectorAll(".register .one .left input ");
@@ -78,35 +138,79 @@ let confirmedElectron = document.querySelector(".confirmedElectron  ");
 let arrowConfirmedElectron = document.querySelector(".confirmedElectron .header img");
 
 
+function setDataOfProduct(obj) {
 
-
-function dispalayGridAndHidden(display, hidden) {
-    hidden.style.display = "none";
-    display.style.display = "grid";
+    registerInput[0].value = obj.children[0].children[0].innerHTML;
+    registerInput[1].value = obj.children[1].children[0].innerHTML;
+    registerInput[2].value = obj.children[2].children[0].innerHTML;
+    registerInput[3].value = getProductCategory();
 }
 
-function dispalayBlockAndHidden(display, hidden) {
-    hidden.style.display = "none";
-    display.style.display = "block";
+export function bodyProductsButtons() {
+    bodyProductsButton.forEach((button) => {
+        button.addEventListener("click", () => {
+            dispalayGridAndHidden(register, bodyProducts);
+            setDataOfProduct(button.parentElement.children[1]);
+            flagProduct = "bodyProducts";
+        });
+
+    });
+}
+export function opticalProductsButtons() {
+    opticalProductsButton.forEach((button) => {
+        button.addEventListener("click", () => {
+            dispalayGridAndHidden(register, opticalProducts);
+            setDataOfProduct(button.parentElement.children[1]);
+            flagProduct = "opticalProducts";
+        });
+    
+    });
+}
+export function audioProductsButtons() {
+    audioProductsButton.forEach((button) => {
+        button.addEventListener("click", () => {
+            dispalayGridAndHidden(register, audioProducts);
+            setDataOfProduct(button.parentElement.children[1]);
+            flagProduct = "audioProducts";
+        });
+    
+    });
+}
+export function audio2ProductsButtons() {
+    audio2ProductsButton.forEach((button) => {
+        button.addEventListener("click", () => {
+            dispalayGridAndHidden(register, audio2Products);
+            setDataOfProduct(button.parentElement.children[1]);
+            flagProduct = "audio2Products";
+        });
+    
+    });
 }
 
-function setDataOfProduct(obj ){
 
-    registerInput[0].value = obj.children[1].children[0].innerHTML  ; 
-    registerInput[1].value = obj.children[2].children[0].innerHTML  ; 
-    registerInput[2].value = obj.children[3].children[0].innerHTML  ; 
-    registerInput[3].value = getProductCategory() ;
-}
+
+bodyProductsButtons() ; 
+opticalProductsButtons() ; 
+audioProductsButtons() ; 
+audio2ProductsButtons() ; 
 
 
 toAbout.addEventListener("click", () => { dispalayGridAndHidden(about, home) });
 toProduct.addEventListener("click", () => { dispalayGridAndHidden(products, home) });
 toContact.addEventListener("click", () => { dispalayGridAndHidden(contact, home) });
 
-toBodyProducts.addEventListener("click", () => { setProductCategory("إعاقة جسدية")  ;  dispalayGridAndHidden(bodyProducts, products) });
-toOpticalProducts.addEventListener("click", () => {  setProductCategory( "إعاقة بصرية")   ; dispalayGridAndHidden(opticalProducts, products) });
-toAudio2Products.addEventListener("click", () => {  setProductCategory( "إعاقة صوتية")  ;  dispalayGridAndHidden(audio2Products, products) });
-toAudioProducts.addEventListener("click", () => {   setProductCategory(  "إعاقة سمعية"  ); dispalayGridAndHidden(audioProducts, products) });
+toContactFromAbout.addEventListener("click", () => { dispalayGridAndHidden(contact, about) });
+toLogin_register.addEventListener("click", () => {
+
+    login_register.style.display = "flex";
+    home.style.display = "none";
+
+});
+
+toBodyProducts.addEventListener("click", () => { userData = {}; setProductCategory("إعاقة جسدية"); dispalayGridAndHidden(bodyProducts, products) });
+toOpticalProducts.addEventListener("click", () => { userData = {}; setProductCategory("إعاقة بصرية"); dispalayGridAndHidden(opticalProducts, products) });
+toAudio2Products.addEventListener("click", () => { userData = {}; setProductCategory("إعاقة صوتية"); dispalayGridAndHidden(audio2Products, products) });
+toAudioProducts.addEventListener("click", () => { userData = {}; setProductCategory("إعاقة سمعية"); dispalayGridAndHidden(audioProducts, products) });
 
 
 arrowBodyProducts.addEventListener("click", () => { dispalayGridAndHidden(products, bodyProducts) });
@@ -118,6 +222,7 @@ arrowAudioProducts.addEventListener("click", () => { dispalayGridAndHidden(produ
 arrowAbout.addEventListener("click", () => { dispalayBlockAndHidden(home, about) });
 arrowProduct.addEventListener("click", () => { dispalayBlockAndHidden(home, products) });
 arrowContact.addEventListener("click", () => { dispalayBlockAndHidden(home, contact) });
+arrowLogin.addEventListener("click", () => { dispalayBlockAndHidden(home, login_register) });
 
 
 arrowQuestions.addEventListener("click", () => { dispalayGridAndHidden(about, questions) });
@@ -125,90 +230,145 @@ arrowQuestions.addEventListener("click", () => { dispalayGridAndHidden(about, qu
 q_About.forEach((q, key) => {
     q.addEventListener("click", () => {
         dispalayGridAndHidden(questions, about);
-        p_Questions.innerHTML = q.innerHTML;
-        p_Answer.innerHTML = arrayOfQuestions[key] ; 
+        questions.style.backgroundImage = `url(${arrayOfQuestions[key]})`;
     });
-
-}) ; 
-
-bodyProductsButton.forEach((button ) => {
-    button.addEventListener("click", () => {
-        dispalayGridAndHidden(register, bodyProducts);
-        setDataOfProduct(button.parentElement ) ; 
-        flagProduct = "bodyProducts" ; 
-    });
-
-}) ; 
-
-opticalProductsButton.forEach((button ) => {
-    button.addEventListener("click", () => {
-        dispalayGridAndHidden(register, opticalProducts);
-        setDataOfProduct(button.parentElement ) ; 
-        flagProduct = "opticalProducts" ; 
-    });
-
-}) ; 
-
-audioProductsButton.forEach((button ) => {
-    button.addEventListener("click", () => {
-        dispalayGridAndHidden(register, audioProducts);
-        setDataOfProduct(button.parentElement ) ; 
-        flagProduct = "audioProducts" ; 
-    });
-
-}) ; 
-
-audio2ProductsButton.forEach((button ) => {
-    button.addEventListener("click", () => {
-        dispalayGridAndHidden(register, audio2Products);
-        setDataOfProduct(button.parentElement ) ; 
-        flagProduct = "audio2Products" ; 
-    });
-
-}) ; 
-
-
-arrowRegister.addEventListener("click", () => {
-    
-    switch(flagProduct){
-
-        case "bodyProducts" : 
-             dispalayGridAndHidden(bodyProducts, register)  ; 
-             break ; 
-        case "opticalProducts" : 
-             dispalayGridAndHidden(opticalProducts, register)  ; 
-             break ; 
-        case "audioProducts" : 
-             dispalayGridAndHidden(audioProducts, register)  ; 
-             break ; 
-        case "audio2Products" : 
-             dispalayGridAndHidden(audio2Products, register)  ; 
-             break ; 
-
-    }
-    
 
 });
 
 
-arrowPaying.addEventListener("click", () => { dispalayGridAndHidden(register , paying) });
-toPaying.addEventListener("click", () => { dispalayGridAndHidden( paying , register) });
+arrowRegister.addEventListener("click", () => {
 
-arrowPayingElectron.addEventListener("click", () => { dispalayGridAndHidden( paying , payingElectron) });
-toPayingElectron.addEventListener("click", () => { dispalayGridAndHidden( payingElectron , paying) });
+    switch (flagProduct) {
+
+        case "bodyProducts":
+            dispalayGridAndHidden(bodyProducts, register);
+            break;
+        case "opticalProducts":
+            dispalayGridAndHidden(opticalProducts, register);
+            break;
+        case "audioProducts":
+            dispalayGridAndHidden(audioProducts, register);
+            break;
+        case "audio2Products":
+            dispalayGridAndHidden(audio2Products, register);
+            break;
+
+    }
 
 
-arrowReceipt.addEventListener("click", () => { dispalayGridAndHidden(  paying  , receipt ) });
-toReceipt.addEventListener("click", () => { dispalayGridAndHidden( receipt ,  paying  ) });
+});
 
 
-arrowConfirmed.addEventListener("click", () => { dispalayGridAndHidden(   receipt , confirmed ) });
-toConfirmed_1.addEventListener("click", () => { dispalayGridAndHidden( confirmed ,  receipt    ) });
-toConfirmed_2.addEventListener("click", () => { dispalayGridAndHidden( confirmed ,  receipt    ) });
+arrowPaying.addEventListener("click", () => { dispalayGridAndHidden(register, paying) });
+toPaying.addEventListener("click", () => {
+
+    if (checkIfInputNotEmpty(".register .one  input")) {
+        userData = {};
+        dispalayGridAndHidden(paying, register);
+        let tmp = generateObject(".register .one  input");
+        userData.name = tmp.name;
+        userData.email = tmp.email;
+        userData.phone = tmp.phoneNum;
+        userData.address = tmp.address;
+        userData.productName = tmp.nameProduct;
+        userData.productNum = tmp.productNum;
+        userData.productPrice = tmp.productPrise;
+
+    } else {
+        displayAlert("alert_error", "emty inut not allow");
+    }
+
+});
+
+arrowPayingElectron.addEventListener("click", () => { dispalayGridAndHidden(paying, payingElectron) });
+toPayingElectron.addEventListener("click", () => { dispalayGridAndHidden(payingElectron, paying) });
 
 
-arrowConfirmedElectron.addEventListener("click", () => { dispalayGridAndHidden(   payingElectron , confirmedElectron ) });
-toConfirmedElectron.addEventListener("click", () => { dispalayGridAndHidden( confirmedElectron ,  payingElectron    ) }); 
+arrowReceipt.addEventListener("click", () => { dispalayGridAndHidden(paying, receipt) });
+toReceipt.addEventListener("click", () => { dispalayGridAndHidden(receipt, paying) });
 
+
+arrowConfirmed.addEventListener("click", () => { dispalayGridAndHidden(products, confirmed) });
+toConfirmed_1.addEventListener("click", () => {
+    userData.place = "داخل المنزل";
+
+    fetchResponsePost("nn", userData, (objData) => {
+
+        if (objData.success == true) {
+            addToTable_home(userData);
+            dispalayGridAndHidden(confirmed, receipt);
+            deleteInputContent(".register .one  input");
+        } else {
+            displayAlert("alert_error", objData.error);
+        }
+
+    }, () => {
+        displayAlert("alert_error", "database not avilable ");
+    });
+
+});
+
+toConfirmed_2.addEventListener("click", () => {
+    userData.place = "داخل الشركة";
+    fetchResponsePost("nn", userData, (objData) => {
+
+        if (objData.success == true) {
+            addToTable_home(userData);
+            dispalayGridAndHidden(confirmed, receipt);
+            deleteInputContent(".register .one  input");
+        } else {
+            displayAlert("alert_error", objData.error);
+        }
+
+
+    }, () => {
+        displayAlert("alert_error", "database not avilable ");
+    });
+
+});
+
+
+arrowConfirmedElectron.addEventListener("click", () => { dispalayGridAndHidden(products, confirmedElectron) });
+toConfirmedElectron.addEventListener("click", () => {
+
+    if (checkIfInputNotEmpty(".payingElectron .body  input")) {
+        let tmp = generateObject(".payingElectron .body  input");
+        userData.nameCardOwner = tmp.name;
+        userData.numCard = tmp.cardNum;
+        fetchResponsePost("nn", userData, (objData) => {
+
+            if (objData.success == true) {
+                addToTable_electron(userData);
+                dispalayGridAndHidden(confirmedElectron, payingElectron);
+                deleteInputContent(".payingElectron .body  input") ; 
+                deleteInputContent(".register .one  input");
+            } else {
+                displayAlert("alert_error", objData.error);
+            }
+
+        }, () => {
+            displayAlert("alert_error", "database not avilable ");
+        });
+
+
+    } else {
+        displayAlert("alert_error", "emty inut not allow");
+    }
+});
+
+
+massage.addEventListener("click", () => {
+
+    if (showMassenger == 0) {
+        massenger.style.display = "flex";
+        showMassenger = 1;
+    }
+    else {
+        massenger.style.display = "none";
+        showMassenger = 0;
+    }
+
+
+});
 
 
