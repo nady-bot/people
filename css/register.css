@@ -1,181 +1,186 @@
+.register .body,
+.payingElectron .body {
 
-.register .body ,
-.payingElectron .body 
- {
-    
-    background-image: url("../images/register/خلفية لون.png") ;
+    background-image: url("../images/register/خلفية لون.png");
 }
 
 
 .register .one {
-    
-    padding : 10px 80px ; 
-    display : grid ; 
-    grid-template-columns : 1fr 1fr auto  ; 
-    gap: 40px ;
+
+    padding: 5px 80px;
+    display: grid;
+    grid-template-columns: 1fr 1fr auto;
+    gap: 40px;
 }
 
 
-.register .one .right  , 
-.register .one .left ,
-.payingElectron .one .form
-{
-  direction : rtl ; 
-  padding : 10px ;
-  font-size : 18px ; 
+.register .one .right,
+.register .one .left,
+.payingElectron .one .form {
+    direction: rtl;
+    padding: 5px;
+    font-size: 18px;
 }
 
-.register .title , 
-.payingElectron .title
-{
-    text-align : center ; 
-    padding : 10px  0  15px ; 
+.register .title,
+.payingElectron .title {
+    text-align: center;
+    padding: 10px 0 15px;
 }
-.register .title .p-one  ,
-.payingElectron .title .p-one  
-{
-    font-size : 30px
+
+.register .title .p-one,
+.payingElectron .title .p-one {
+    font-size: 30px
 }
-.register .title .p-two , 
-.payingElectron .title .p-two 
-{
-    font-size : 15px
+
+.register .title .p-two,
+.payingElectron .title .p-two {
+    font-size: 15px
 }
 
 .register .one .right .div-input,
-.payingElectron .one .form .div-input
- {
-     display : flex ; 
+.payingElectron .one .form .div-input {
+    display: flex;
 }
 
-.register .one .right div button , 
-.payingElectron .one .form div button 
- {
-     width : 20% ; 
-     background-color: rgb(32, 165, 5) ; 
-     border: none ;
-     border-radius: 5px ;
+.register .one .right div button,
+.payingElectron .one .form div button {
+    width: 25%;
+    background-color: rgb(32, 165, 5);
+    border: none;
+    border-radius: 5px;
 }
 
-.register .one .right div button img , 
-.payingElectron .one .form div button img 
- 
- {
-    height: 60% ;
-    vertical-align : middle ; 
+.register .one .right div button img,
+.payingElectron .one .form div button img {
+    height: 60%;
+    vertical-align: middle;
 }
 
-.register .two  , 
-.payingElectron .two 
-{
-    width : 50% ;
-    display : flex ;
-    justify-content : space-between ; 
-    align-items : center   ; 
-}
- 
-.payingElectron .two 
-{
-    width : 100% ; 
-    justify-content : space-between ; 
+.register .two,
+.payingElectron .two {
+    width: 40%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
-.register .two img  , 
-.payingElectron .two img 
-{
-      width:  40% ;
+.register .two {
+
+    padding: 10px; 
+    margin-top : -160px  ; 
 }
 
-.to-paying , .to-confirmedElectron {
-    cursor : pointer; 
-}
-.payingElectron .body   
-{
-   display: flex ; 
-   flex-direction : column ; 
-   justify-content : center;  
-   align-items : center; 
+.payingElectron .two {
+    width: 100%;
+    justify-content: space-between;
 }
 
-.payingElectron .body .one 
-{
-   width : 50% ; 
-}
- 
-.payingElectron .two 
-{
-    width : 100% ;
+.register .two img,
+.payingElectron .two img {
+    width: 40%;
 }
 
-.payingElectron .two img{
-    width : 16% ; 
+.to-paying,
+.to-confirmedElectron {
+    cursor: pointer;
+}
+
+.payingElectron .body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.payingElectron .body .one {
+    width: 40%;
+}
+
+.payingElectron .two {
+    width: 100%;
+}
+
+.payingElectron .two img {
+    width: 16%;
+}
+
+.payingElectron input {
+    text-align: center;
+    margin-bottom: 5px ;  
+  }
+
+.payingElectron .one .p-date {
+   opacity: 0.5 ;
+   font-size: 13px ;
+   text-align: center ;
+   margin-bottom : 5px ; 
+}
+
+.payingElectron .one .date-input {
+    width: 100% ; 
+    display: flex;
+    justify-content: space-between; 
+}
+
+.payingElectron .one .date-input input{
+    width: 45%  ;  
+}
+
+.list-name-regester{
+    width: 20% ;
 }
 
 
 @media screen and (max-width: 600px) {
 
- 
+
+    .register .one {
+
+        padding: 50px 30px;
+        grid-template-columns: 1fr;
+        gap: 40px;
+    }
+
+    .register .one .right,
+    .register .one .left,
+    .payingElectron .one .form {
+        font-size: 16px;
+    }
+
+    .register .title .p-one,
+    .payingElectron .title .p-one {
+        font-size: 25px
+    }
+
+    .register .title .p-two,
+    .payingElectron .title .p-two {
+        font-size: 11px
+    }
 
 
-.register .one {
-    
-    padding : 50px  30px ; 
-    grid-template-columns : 1fr   ; 
-    gap: 40px ;
+    .register .one .right div button,
+    .payingElectron .one .form div button {
+        width: 40%;
+        padding: 0;
+    }
+
+    .register .one .right div button img,
+    .payingElectron .one .form div button img {
+        height: 60%;
+        vertical-align: middle;
+    }
+
+
+    .payingElectron .body .one {
+        width: 90%;
+    }
+
+    .payingElectron .two img {
+        width: 25%;
+    }
+
+
 }
 
-.register .one .right  , 
-.register .one .left ,
-.payingElectron .one .form
-{
-  font-size : 16px ; 
-}
-
-.register .title .p-one  ,
-.payingElectron .title .p-one  
-{
-    font-size : 25px
-}
-.register .title .p-two , 
-.payingElectron .title .p-two 
-{
-    font-size : 11px
-}
-
-
-.register .one .right div button , 
-.payingElectron .one .form div button 
- {
-     width : 40% ; 
-     padding : 0 ; 
-}
-
-.register .one .right div button img , 
-.payingElectron .one .form div button img 
- 
- {
-    height: 60% ;
-    vertical-align : middle ; 
-}
-
-
-.payingElectron .body .one 
-{
-   width : 90% ;  
-}
-
-/* .payingElectron .two  {
-    margin  : 20px 0 0 0 ;  ; 
-    background-color: aqua ; 
-} */
-.payingElectron .two img{
-    width : 25% ;  
-}
-
-  
- }
- 
- @media screen and (max-width: 768px) {
- 
- 
- }
+@media screen and (max-width: 768px) {}

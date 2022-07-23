@@ -1,110 +1,158 @@
-*{
-    box-sizing: border-box ;
+* {
+    box-sizing: border-box;
 }
 
-.w-100{
+.w-100 {
     width: 100%;
 }
 
-input , select{
-    padding : 5px ; 
-    direction: rtl ;
-    outline :none ; 
-    border:none ; 
-    font-size : 15px ; 
-    border-radius: 5px ;
+input,
+select {
+    padding: 5px;
+    direction: rtl;
+    outline: none;
+    border: none;
+    font-size: 15px;
+    border-radius: 5px;
 }
 
 
-body{
-    margin: 0; 
-    padding: 0; 
-}
-p{
-    margin: 0; 
+body {
+    margin: 0;
+    padding: 0;
 }
 
-.header div     
+p {
+    margin: 0;
+}
+
+.pointer{
+    cursor: pointer; 
+}
+
+.header div {
+    width: 20%;
+    display: flex;
+    align-items: center; 
+    justify-content :space-evenly ; 
+}
+
+.header {
+    background-image: url("../images/المنتجات/شفاف.png");
+    padding: 0 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-weight: bolder ;
+    position: sticky  ;
+    top: 0 ;
+    z-index: 555 ; 
+}
+
+.arrow {
+    cursor: pointer;
+    width: 3%;
+}
+
+.footer {
+    padding: 0;
+    margin: 0;
+    background-color :#28475c ; 
+}
+
+.footer img {
+    width: 100%; 
+}
+
+.header div p,
+.body .two p {
+    padding: 0;
+    margin: 0;
+    font-size: 30px;
+}
+
+.header div p {
+    color: #FBA30B;
+    text-shadow: 2px 2px 0px #000000;
+}
+
+.header div img  
 {
-    display : flex  ;  
-    align-items : center; ;  
-}
-
-.header   
-{
-    background-image :url("../images/المنتجات/شفاف.png") ; 
-    padding : 0 10px ; 
-    display :flex ; 
-    justify-content : space-between ; 
-    align-items : center; 
+  width:30px ;
 }
 
 
+/* .home ,  */
 
-.arrow{
-    cursor : pointer; 
-    width : 4%; 
+.dashboard , 
+.products,
+.login-register , 
+.audio-products,
+.audio2-products,
+.body-products,
+.optical-products,
+.about,
+.questions,
+.register,
+.paying,
+.receipt,
+.confirmed,
+.payingElectron,
+.confirmedElectron,
+.contact {
+
+    width: 100%;
+    min-height: 100vh;
+    grid-template-rows: auto 1fr auto;
+    display: none;
 }
 
-.footer img   
-{
-    width: 100% ; 
+
+
+.alert_error { 
+    position: absolute ; 
+    top : 30%  ; 
+    left  : 30%  ; 
+    width: 40% ; 
+    font-size: 20px ; 
+    padding : 20px ;  
+    text-align :center ; 
+    border-radius: 20px ;
+    background-color: rgba(238, 90, 5, 0.672) ; 
+    color :white ;  
 }
 
-.header div p ,
-.body .two p 
-{ 
-    padding : 0 ; 
-    margin : 0 ; 
-    font-size : 30px  ; 
-    color :#FBA30B  ;
-    text-shadow:1px 1px 1px  #000000 ;
-}
-
-
-.products , 
-.audio-products , 
-.audio2-products , 
-.body-products , 
-.optical-products  ,
-.about  ,
-.questions  , 
-.register  ,
-.paying , 
-.receipt ,
-.confirmed , 
-.payingElectron ,
-.confirmedElectron , 
-.contact 
-{
-
-    width: 100% ;
-    min-height : 100vh ; 
-    display :grid ; 
-    grid-template-rows : auto  1fr auto ;
-    display : none;
+.alert_acssept {
+    position: absolute ; 
+    top : 30%  ; 
+    left  : 30%  ; 
+    width: 40% ; 
+    font-size: 20px ;
+    padding : 20px ;   
+    text-align :center ; 
+    border-radius: 20px ; 
+    background-color: rgba(48, 142, 42, 0.672) ; 
+    color :white ; 
 }
 
 
 
 @media screen and (max-width: 600px) {
 
-    .arrow , .list-name{
-        width : 22px ; 
-    }
-    .list-nameAll{
-        width : 90px ; 
+    .arrow,
+    .list-name {
+        width: 22px;
     }
 
-    .header div p ,
-    .body .two p 
-    { 
-        font-size : 20px  ;  
+    .list-nameAll {
+        width: 90px;
+    }
+
+    .header div p,
+    .body .two p {
+        font-size: 20px;
     }
 
 }
 
-@media screen and (max-width: 768px) {
-
-
-}
+@media screen and (max-width: 768px) {}

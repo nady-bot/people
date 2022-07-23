@@ -1,154 +1,139 @@
 
-
-.paying .body .one ,
-.receipt .body .one 
- {
-
-    height: 30% ;  
-    display : flex ; 
-    justify-content :center; 
-    align-items : center; 
-    font-size : 50px ; 
+.paying{
+  background-image: url("../images/paying/_2خلفية.png") ; 
+  background-size: 100% 100% ;
 }
 
-.paying .body .two, 
-.receipt .body .two 
+.receipt {
+  background-image: url("../images/paying/_1خلفية.png") ; 
+  background-size: 100% 100% ;
+}
+
+.paying .header,
+.receipt .header
 {
-    height: 50% ;  
-    display : flex ; 
-    justify-content :space-evenly ; 
-    align-items : center; 
-    font-size : 40px ; 
-    text-align : center; 
+  background-image: none; 
 }
 
-.paying .body .two div ,
-.receipt .body .two div   ,
-.confirmed .body .one  , 
-.confirmedElectron .body .one   
- {
-  background-color : #B8E0E5 ; 
-  border-radius: 10px ;
-  padding  : 20px 10px ; 
+.paying .body .one,
+.receipt .body .one {
+
+  height: 30%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 50px;
+}
+
+.paying .body .two,
+.receipt .body .two {
+  height: 50%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  font-size: 40px;
+  text-align: center;
+}
+
+
+.paying .body .two div,
+.receipt .body .two div {
   cursor: pointer;
 }
 
- 
-.paying .body .two div p  ,
-.receipt .body .two div p  
-  {
-  color : black ; 
-  padding-bottom    : 10px ; 
-}
- 
 
-.paying .body .two img ,
-.receipt .body .two img 
-{
-  width : 50% ;
+.paying .body .two div p,
+.receipt .body .two div p {
+  color: black;
+  padding-bottom: 10px;
 }
 
-.confirmed .body  , 
-.confirmedElectron .body  
-{
-    display :flex ; 
-    justify-content :center ; 
-    align-items : center; 
+
+.paying .body .two img,
+.receipt .body .two img {
+  width: 50%;
 }
 
-.confirmed .body .one  , 
-.confirmedElectron .body .one    
-{
-     
-    background-image : url("../images/paying/Layer 100.png")  ; 
-    font-size : 50px ; 
-    text-align : center ; 
-    padding : 20px 40px ; 
-    cursor: auto ;
-
+.confirmed .body,
+.confirmedElectron .body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-.confirmed .body .one .p-one , 
-.confirmedElectron .body .one .p-one   
- {
-     
-    color :red ; 
-
+.confirmed .body img ,
+.confirmedElectron .body img  {
+  width: 50% ; 
 }
+
+.confirmed .body .one  ,
+.confirmedElectron .body .one  {
+  text-align: center  ; 
+}
+
 
 
 
 @media screen and (max-width: 600px) {
 
-  .paying .body .one ,
-  .receipt .body .one 
-   { 
-      font-size : 30px ; 
-      margin-bottom : 20px  ; 
+  .paying .body .one,
+  .receipt .body .one {
+    font-size: 30px;
+    margin-bottom: 20px;
   }
-  
-  .paying .body .two, 
-  .receipt .body .two 
-  {
 
-      flex-direction : column ; 
-      font-size : 25px ;  
+  .paying .body .two,
+  .receipt .body .two {
+
+    flex-direction: column;
+    font-size: 25px;
   }
-  
-  .paying .body .two div ,
-  .receipt .body .two div   ,
-  .confirmed .body .one  , 
-  .confirmedElectron .body .one   
-   {
-   margin-bottom : 20px  ; 
+
+  .paying .body .two div,
+  .receipt .body .two div,
+  .confirmed .body .one,
+  .confirmedElectron .body .one {
+    margin-bottom: 20px;
   }
-  
-   
-  .paying .body .two div p  ,
-  .receipt .body .two div p  
-    {
-    color : black ; 
-    padding-bottom    : 10px ; 
+
+
+  .paying .body .two div p,
+  .receipt .body .two div p {
+    color: black;
+    padding-bottom: 10px;
   }
-   
-  
-  .paying .body .two img ,
-  .receipt .body .two img 
-  {
-    width : 50% ;
+
+
+  .paying .body .two img,
+  .receipt .body .two img {
+    width: 50%;
   }
-  
-  .confirmed .body  , 
-  .confirmedElectron .body  
-  {
-      display :flex ; 
-      justify-content :center ; 
-      align-items : center; 
+
+  .confirmed .body,
+  .confirmedElectron .body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
-  
-  .confirmed .body .one  , 
-  .confirmedElectron .body .one    
-  {
-       
-      background-image : url("../images/paying/Layer 100.png")  ; 
-      font-size : 50px ; 
-      text-align : center ; 
-      padding : 20px 40px ; 
-      cursor: auto ;
-  
+
+  .confirmed .body .one,
+  .confirmedElectron .body .one {
+
+    background-image: url("../images/paying/Layer 100.png");
+    font-size: 50px;
+    text-align: center;
+    padding: 20px 40px;
+    cursor: auto;
+
   }
-  
-  .confirmed .body .one .p-one , 
-  .confirmedElectron .body .one .p-one   
-   {
-       
-      color :red ; 
-  
+
+  .confirmed .body .one .p-one,
+  .confirmedElectron .body .one .p-one {
+
+    color: red;
+
   }
 
 }
 
-@media screen and (max-width: 768px) {
-
-
-}
+@media screen and (max-width: 768px) {}
