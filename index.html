@@ -7,13 +7,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 
+    <link rel="stylesheet" href="fontawesome-free-6.1.1-web/css/all.min.css">
+    <script src="fontawesome-free-6.1.1-web/js/all.min.js"> </script>
+
     <link rel="stylesheet" href="css/main.css" />
     <link rel="stylesheet" href="css/home.css" />
     <link rel="stylesheet" href="css/contact.css" />
     <link rel="stylesheet" href="css/products.css" />
-    <link rel="stylesheet" href="css/register.css" />         
-    <link rel="stylesheet" href="css/paying.css" />         
-    <link rel="stylesheet" href="css/about_question.css" />         
+    <link rel="stylesheet" href="css/login.css" />
+    <link rel="stylesheet" href="css/register.css" />
+    <link rel="stylesheet" href="css/paying.css" />
+    <link rel="stylesheet" href="css/about_question.css" />
+    <link rel="stylesheet" href="css/dash.css" />
 
 
 </head>
@@ -23,38 +28,42 @@
     <div class="home">
 
 
-        <div class = "language" >
-            
-            <p> 
-                <img src = "images/home/Layer 3.png" > 
-                <span > العربية  </span>
-                <img src = "images/home/Layer 4.png" >
+        <div class="language">
+            <img class="img-one" src="images/home/الللفة.png">
+            <p class="admin">
+                admin
+            </p>
+            <p class="loginOrReg">
+                login or register user
             </p>
         </div>
-
         <div class="cont-icon">
 
 
             <div class="container one">
-                <img class="img_1" src="images/home/Layer_4.png" alt="Layer_4">
-                <img class="img_2" src="images/home/Layer 5.png" alt="">
-                <p> المنتجات </p>
+                <img class="img_1" src="images/home/المنتجات.png">
             </div>
             <div class="container two">
-                <img class="img_1" src="images/home/Layer_4.png" alt="Layer_4">
-                <img class="img_2" src="images/home/Layer 8.png" alt="">
-                <p> الرأيسية </p>
-            </div>
-            <div class="container three">
-                <img class="img_1" src="images/home/Layer_4.png" alt="Layer_4">
-                <img class="img_2" src="images/home/Layer 9.png" alt="">
-                <p> حول </p>
+                <img class="img_1" src="images/home/الرئسية.png">
             </div>
             <div class="container four">
-                <img class="img_1" src="images/home/Layer_4.png" alt="Layer_4">
-                <img class="img_2" src="images/home/Layer 11.png" alt="">
-                <p> للتواصل </p>
+                <img class="img_1" src="images/home/للنواصل.png">
             </div>
+            <div class="container three">
+                <img class="img_1" src="images/home/حول.png">
+            </div>
+        </div>
+
+        <div class="admin-form">
+
+            <div>
+                <span class="pointer"> <i class="fa-solid fa-xmark"></i> </span>
+                <h2> login into dashboard </h2>
+                <input type="password" placeholder="ادخل الرقم السري ">
+                <button class="pointer"> opin </button>
+            </div>
+
+
         </div>
 
     </div>
@@ -64,7 +73,7 @@
         <div class="header">
 
             <img class="arrow" src="images/المنتجات/سهم.png">
-            <img class = "list-nameAll" src="images/المنتجات/اسم القائمة.png">
+            <img class="list-name" src="images/المنتجات/اسم القائمة.png">
 
         </div>
         <div class="body">
@@ -77,15 +86,11 @@
                 <img src="images/المنتجات/منتاجات صوتية.png">
                 <img src="images/المنتجات/منتاجات سمعية.png">
             </div>
-            <div class="three">
-                <img src="images/المنتجات/Layer 4 copy.png">
-                <img src="images/المنتجات/Layer 4 copy.png">
-            </div>
+
 
 
         </div>
         <div class="footer">
-            <img src="images/المنتجات/شريط تحت.png">
         </div>
 
     </div>
@@ -95,29 +100,53 @@
         <div class="header">
 
             <img class="arrow" src="images/المنتجات/سهم.png">
-            <div>
-                <p> قائمة التواصل </p>
-                <img class = "list-name" src="images/contact/Layer 23.png">
-            </div>
+            <img class="list-name" src="images/contact/اسم القائمة.png">
 
 
         </div>
         <div class="body">
 
-          <div>
-              <p> مواقع التواصل الاجتماعي </p>
-              <a href = "#" target "_blank"> <img src = "images/contact/Layer 27.png" >   </a>
-              <a href = "#" target "_blank"> <img src = "images/contact/Layer 26.png" >   </a>
-              <a href = "#" target "_blank"> <img src = "images/contact/Layer 28.png" >   </a>
-              <a href = "#" target "_blank"> <img src = "images/contact/Layer 25.png" >   </a>
-              <a href = "#" target "_blank"> <img src = "images/contact/Layer 24.png" >   </a>
-          </div>
-   
+            <div>
+                <p> مواقع التواصل الاجتماعي </p>
+                <a href="#" target "_blank"> <img src="images/contact/Layer 27.png"> </a>
+                <a href="#" target "_blank"> <img src="images/contact/Layer 26.png"> </a>
+                <a href="#" target "_blank"> <img src="images/contact/Layer 28.png"> </a>
+                <a href="#" target "_blank"> <img src="images/contact/Layer 25.png"> </a>
+                <a href="#" target "_blank"> <img src="images/contact/Layer 24.png"> </a>
+            </div>
+
 
 
         </div>
-        <div class="footer">
-            <img src="images/المنتجات/شريط تحت.png">
+
+        <div class="massage-container">
+            <i class="pointer massage fa-brands fa-facebook-messenger"></i>
+        </div>
+
+        <div class="massenger">
+
+            <div class="parent">
+
+                <div class="child_one">
+                    <div class="put-massage">
+
+                    </div>
+
+                    <div class="div-send">
+
+                        <input focus=true name="massage" id="inp_Home">
+                        <button class="btn_send" name="send">
+                            <li class="send pointer fa-solid fa-paper-plane"> </li>
+                        </button>
+
+                    </div>
+
+
+
+                </div>
+
+            </div>
+
         </div>
 
     </div>
@@ -127,11 +156,7 @@
         <div class="header">
 
             <img class="arrow" src="images/المنتجات/سهم.png">
-            <div>
-                <p> قائمة حول </p>
-                <img class = "list-name" src="images/about/Layer 17.png">
-            </div>
-
+            <img class="list-name" src="images/about/اسم القائمة.png">
 
         </div>
 
@@ -139,18 +164,21 @@
 
             <div class="one">
 
-                <p> ما هو موقع people ؟ </p>
-                <p> ما هي شركة people ؟ </p>
-                <p> اين تقع شركة people ؟ </p>
-                <p> ما هي المنتجات التي يوفرها موقع people ؟ </p>
-                <p> مواعيد العمل في شركة people ؟ </p>
-                <p> هل الاجهزة التعويضية تتناسب مع جميع الاعمار ؟ </p>
-                <p> كيفية استخدام الاجهزة التعويضية وطرق التعامل معها ؟ </p>
-                <p> الاعمار الافتراضية للأجهزة التعويضية ؟ </p>
+                <p> <img src="images/about/q_1.png"> </p>
+                <p> <img src="images/about/q_2.png"> </p>
+                <p> <img src="images/about/q_3.png"> </p>
+                <p> <img src="images/about/q_4.png"> </p>
+                <p> <img src="images/about/q_5.png"> </p>
+                <p> <img src="images/about/q_6.png"> </p>
+                <p> <img src="images/about/q_7.png"> </p>
+                <p> <img src="images/about/q_8.png"> </p>
 
             </div>
             <div class="two">
-                <p> إذا كان لديك اي سؤال او استفسار الرجاء الذهاب الى القائمة للتواصل للإجابة على السؤال </p>
+                <p>
+                    <img src="images/about/details.png">
+                    <img class="img-two" src="images/about/كلمة للتواصل.png">
+                </p>
             </div>
 
         </div>
@@ -160,15 +188,47 @@
 
     </div>
 
+    <div class="login-register">
+
+        <div class="header">
+
+            <img class="arrow" src="images/المنتجات/سهم.png">
+
+        </div>
+
+        <div class="one">
+            <h1> Smart Register System </h1>
+            <input name="name" type="text" placeholder="الاسم ">
+            <input name="email" type="email" placeholder="الايميل ">
+            <input name="password" type="password" placeholder="الرقم السري ">
+
+            <button name="register" class="pointer"> sign up </button>
+
+
+            <p> You have an account? <span class="pointer toSignin"> Sign in </span> </p>
+        </div>
+
+        <div class="two">
+
+            <h1> Smart Login System </h1>
+
+            <input name="email" type="email" placeholder="الايميل ">
+
+            <input name="password" type="password" placeholder="الرقم السري ">
+
+            <button name="login" class=" pointer"> sign in </button>
+
+            <p> Don’t have an account? <span class="pointer toRegister"> Sign up </span> </p>
+        </div>
+
+    </div>
+
     <div class="audio-products">
 
         <div class="header">
 
             <img class="arrow" src="images/المنتجات/سهم.png">
-            <div>
-                <p> منتجات سمعية </p>
-                <img class = "list-name" src="images/audio/Layer 43.png">
-            </div>
+            <img class="list-name" src="images/audio/اسم القائمة.png">
 
 
         </div>
@@ -178,35 +238,42 @@
             <div class="one">
 
                 <div>
-                    <img src="images/audio/Layer 41.png">
-                    <p> اسم المنتج :  <span>السماعة </span></p>
-                    <p> <span> 1 </span> : رقم المنتج </p>
-                    <p>  <span> 55</span> : سعر المنتج </p>
-                    <button> شراء المنتج </button>
+                    <img class="img-product" src="images/audio/Layer 41.png">
+                    <div class="produt-info">
+                        <p> اسم المنتج : <span>السماعة </span></p>
+                        <p> <span> 2004 </span> : رقم المنتج </p>
+                        <p> <span> $260</span> : سعرالمنتج </p>
+                    </div>
+                    <button> <img src="images/المنتجات/شراء المنتج.png"> </button>
                 </div>
+
                 <div>
-                    <img src="images/audio/Layer 40.png">
+                    <img class="img-product" src="images/audio/Layer 40.png">
+                    <div class="produt-info">
+                        <p> اسم المنتج : <span>سماعة نانو </span></p>
+                        <p> <span> 2005 </span> : رقم المنتج </p>
+                        <p> <span> $75</span> : سعرالمنتج </p>
+                    </div>
 
-                    <p> اسم المنتج :  <span>سماعة نانو  </span></p>
-                    <p> <span> 2 </span> : رقم المنتج </p>
-                    <p>  <span> 66</span> : سعر المنتج </p>
-
-                    <button> شراء المنتج </button>
+                    <button> <img src="images/المنتجات/شراء المنتج.png"> </button>
                 </div>
+
                 <div>
-                    <img src="images/audio/Layer 39.png">
-                    <p> اسم المنتج :  <span>سماعة خارجية  </span></p>
-                    <p> <span> 3 </span> : رقم المنتج </p>
-                    <p>  <span> 77</span> : سعر المنتج </p>
-                    <button> شراء المنتج </button>
+                    <img class="img-product" src="images/audio/Layer 39.png">
+                    <div class="produt-info">
+                        <p> اسم المنتج : <span>سماعة خارجية </span></p>
+                        <p> <span> 2006 </span> : رقم المنتج </p>
+                        <p> <span> $200</span> : سعرالمنتج </p>
+                    </div>
+                    <button> <img src="images/المنتجات/شراء المنتج.png"> </button>
                 </div>
 
 
             </div>
             <div class="two">
 
-                <img src="images/audio/Layer 42.png">
-                <p> الرجاء التأكد من المنتج قبل عملية الشراء </p>
+                <img class="cart" src="images/audio/Layer 42.png">
+                <p> <img src="images/audio/check.png"> </p>
 
             </div>
 
@@ -222,10 +289,8 @@
         <div class="header">
 
             <img class="arrow" src="images/المنتجات/سهم.png">
-            <div>
-                <p> منتجات صوتية </p>
-                <img class = "list-name" src="images/audio2/Layer 37.png">
-            </div>
+            <img class="list-name" src="images/audio2/اسم القائمة.png">
+
 
 
         </div>
@@ -235,33 +300,39 @@
             <div class="one">
 
                 <div>
-                    <img src="images/audio2/Layer 35.png">
-                    <p> اسم المنتج :  <span>    السماعة الذكية  </span></p>
-                    <p> <span> 4 </span> : رقم المنتج </p>
-                    <p>  <span> 77</span> : سعر المنتج </p>
-                    <button> شراء المنتج </button>
+                    <img class="img-product" src="images/audio2/Layer 35.png">
+                    <div class="produt-info">
+                        <p> اسم المنتج : <span> السماعة الذكية </span></p>
+                        <p> <span> 2000 </span> : رقم المنتج </p>
+                        <p> <span> $500 </span> : سعرالمنتج </p>
+                    </div>
+                    <button> <img src="images/المنتجات/شراء المنتج.png"> </button>
                 </div>
                 <div>
-                    <img src="images/audio2/Layer 34.png">
-                    <p> اسم المنتج :  <span> النظارة الذكية    </span></p>
-                    <p> <span> 5 </span> : رقم المنتج </p>
-                    <p>  <span> 88</span> : سعر المنتج </p>
-                    <button> شراء المنتج </button>
+                    <img class="img-product" src="images/audio2/Layer 34.png">
+                    <div class="produt-info">
+                        <p> اسم المنتج : <span> النظارة الذكية </span></p>
+                        <p> <span> 2001 </span> : رقم المنتج </p>
+                        <p> <span> $1000</span> : سعرالمنتج </p>
+                    </div>
+                    <button> <img src="images/المنتجات/شراء المنتج.png"> </button>
                 </div>
                 <div>
-                    <img src="images/audio2/Layer 33.png">
-                    <p> اسم المنتج :  <span>   قفاز ذكي   </span></p>
-                    <p> <span> 6 </span> : رقم المنتج </p>
-                    <p>  <span> 99</span> : سعر المنتج </p>
-                    <button> شراء المنتج </button>
+                    <img class="img-product" src="images/audio2/Layer 33.png">
+                    <div class="produt-info">
+                        <p> اسم المنتج : <span> قفاز ذكي </span></p>
+                        <p> <span> 2002 </span> : رقم المنتج </p>
+                        <p> <span> $850</span> : سعرالمنتج </p>
+                    </div>
+                    <button> <img src="images/المنتجات/شراء المنتج.png"> </button>
                 </div>
 
 
             </div>
             <div class="two">
 
-                <img src="images/audio/Layer 42.png">
-                <p> الرجاء التأكد من المنتج قبل عملية الشراء </p>
+                <img class="cart" src="images/audio/Layer 42.png">
+                <p> <img src="images/audio/check.png"> </p>
 
             </div>
 
@@ -277,10 +348,8 @@
         <div class="header">
 
             <img class="arrow" src="images/المنتجات/سهم.png">
-            <div>
-                <p> منتجات جسدية </p>
-                <img class = "list-name" src="images/body/Layer 52.png">
-            </div>
+            <img class="list-name" src="images/body/اسم القائمة.png">
+
 
 
         </div>
@@ -290,54 +359,93 @@
             <div class="one">
 
                 <div>
-                    <img src="images/body/Layer 50.png">
-                    <p> اسم المنتج :  <span>   اذن صناعية   </span></p>
-                    <p> <span> 7 </span> : رقم المنتج </p>
-                    <p>  <span> 11</span> : سعر المنتج </p>
-                    <button> شراء المنتج </button>
+                    <img class="img-product" src="images/body/Layer 50.png">
+                    <div class="produt-info">
+                        <p> اسم المنتج : <span> اذن صناعية </span></p>
+                        <p> <span> 2010 </span> : رقم المنتج </p>
+                        <p> <span> $500</span> : سعرالمنتج </p>
+                    </div>
+                    <button> <img src="images/المنتجات/شراء المنتج.png"> </button>
                 </div>
                 <div>
-                    <img src="images/body/Layer 49.png">
-                    <p> اسم المنتج :  <span>   قلة اصبع   </span></p>
-                    <p> <span> 8 </span> : رقم المنتج </p>
-                    <p>  <span> 22</span> : سعر المنتج </p>
-                    <button> شراء المنتج </button>
+                    <img class="img-product" src="images/body/Layer 49.png">
+                    <div class="produt-info">
+                        <p> اسم المنتج : <span> قلة اصبع </span></p>
+                        <p> <span> 2011 </span> : رقم المنتج </p>
+                        <p> <span> $100</span> : سعرالمنتج </p>
+                    </div>
+                    <button> <img src="images/المنتجات/شراء المنتج.png"> </button>
                 </div>
                 <div>
-                    <img src="images/body/Layer 48.png">
-                    <p> اسم المنتج :  <span>   ذراع الكتروني  </span></p>
-                    <p> <span> 9 </span> : رقم المنتج </p>
-                    <p>  <span> 33</span> : سعر المنتج </p>
-                    <button> شراء المنتج </button>
+                    <img class="img-product" src="images/body/Layer 48.png">
+                    <div class="produt-info">
+                        <p> اسم المنتج : <span> ذراع الكتروني </span></p>
+                        <p> <span> 2012 </span> : رقم المنتج </p>
+                        <p> <span> $50</span> : سعرالمنتج </p>
+                    </div>
+                    <button> <img src="images/المنتجات/شراء المنتج.png"> </button>
                 </div>
                 <div>
-                    <img src="images/body/Layer 47.png">
-                    <p> اسم المنتج :  <span>   يد صناعية  </span></p>
-                    <p> <span> 10 </span> : رقم المنتج </p>
-                    <p>  <span> 44</span> : سعر المنتج </p>
-                    <button> شراء المنتج </button>
+                    <img class="img-product" src="images/body/Layer 47.png">
+                    <div class="produt-info">
+                        <p> اسم المنتج : <span> يد صناعية </span></p>
+                        <p> <span> 2013 </span> : رقم المنتج </p>
+                        <p> <span> $320</span> : سعرالمنتج </p>
+                    </div>
+                    <button> <img src="images/المنتجات/شراء المنتج.png"> </button>
                 </div>
                 <div>
-                    <img src="images/body/Layer 46.png">
-                    <p> اسم المنتج :  <span>   قدم صناعية   </span></p>
-                    <p> <span> 11 </span> : رقم المنتج </p>
-                    <p>  <span> 41</span> : سعر المنتج </p>
-                    <button> شراء المنتج </button>
+                    <img class="img-product" src="images/body/Layer 46.png">
+                    <div class="produt-info">
+                        <p> اسم المنتج : <span> قدم صناعية </span></p>
+                        <p> <span> 2014 </span> : رقم المنتج </p>
+                        <p> <span> $2000</span> : سعرالمنتج </p>
+                    </div>
+                    <button> <img src="images/المنتجات/شراء المنتج.png"> </button>
                 </div>
                 <div>
-                    <img src="images/body/Layer 45.png"> 
-                    <p> اسم المنتج :  <span>   ذراع صناعي   </span></p>
-                    <p> <span> 12 </span> : رقم المنتج </p>
-                    <p>  <span> 52</span> : سعر المنتج </p>
-                    <button> شراء المنتج </button>
+                    <img class="img-product" src="images/body/Layer 45.png">
+                    <div class="produt-info">
+                        <p> اسم المنتج : <span> ذراع صناعي </span></p>
+                        <p> <span> 2015 </span> : رقم المنتج </p>
+                        <p> <span> $35</span> : سعرالمنتج </p>
+                    </div>
+                    <button> <img src="images/المنتجات/شراء المنتج.png"> </button>
+                </div>
+                <div>
+                    <img class="img-product" src="images/body/images.png">
+                    <div class="produt-info">
+                        <p> اسم المنتج : <span> عكاز رباعي </span></p>
+                        <p> <span> 2016 </span> : رقم المنتج </p>
+                        <p> <span> $45</span> : سعرالمنتج </p>
+                    </div>
+                    <button> <img src="images/المنتجات/شراء المنتج.png"> </button>
+                </div>
+                <div>
+                    <img class="img-product" src="images/body/N29711467A_11.png">
+                    <div class="produt-info">
+                        <p> اسم المنتج : <span>عكاز الساعد </span></p>
+                        <p> <span> 2017 </span> : رقم المنتج </p>
+                        <p> <span> $28</span> : سعرالمنتج </p>
+                    </div>
+                    <button> <img src="images/المنتجات/شراء المنتج.png"> </button>
+                </div>
+                <div>
+                    <img class="img-product" src="images/body/كرسي-متحرك-كهربائي-1-1.png">
+                    <div class="produt-info">
+                        <p> اسم المنتج : <span> كرسي متحرك </span></p>
+                        <p> <span> 2018 </span> : رقم المنتج </p>
+                        <p> <span> $120</span> : سعرالمنتج </p>
+                    </div>
+                    <button> <img src="images/المنتجات/شراء المنتج.png"> </button>
                 </div>
 
 
             </div>
             <div class="two">
 
-                <img src="images/audio/Layer 42.png">
-                <p> الرجاء التأكد من المنتج قبل عملية الشراء </p>
+                <img class="cart" src="images/audio/Layer 42.png">
+                <p> <img src="images/audio/check.png"> </p>
 
             </div>
 
@@ -353,7 +461,7 @@
         <div class="header">
 
             <img class="arrow" src="images/المنتجات/سهم.png">
-            <img class = "list-nameAll" src="images/optical/اسم القائمة.png">
+            <img class="list-nameAll" src="images/optical/اسم القائمة.png">
         </div>
 
         <div class="body">
@@ -361,33 +469,39 @@
             <div class="one">
 
                 <div>
-                    <img src="images/optical/عصيا.png"> 
-                    <p> اسم المنتج :  <span>   عصا الكترونية  </span></p>
-                    <p> <span> 13 </span> : رقم المنتج </p>
-                    <p>  <span> 63</span> : سعر المنتج </p>
-                    <button> شراء المنتج </button>
+                    <img class="img-product" src="images/optical/عصيا.png">
+                    <div class="produt-info">
+                        <p> اسم المنتج : <span> عصا الكترونية </span></p>
+                        <p> <span> 2007 </span> : رقم المنتج </p>
+                        <p> <span> $50</span> : سعرالمنتج </p>
+                    </div>
+                    <button> <img src="images/المنتجات/شراء المنتج.png"> </button>
                 </div>
                 <div>
-                    <img src="images/optical/Layer 55.png">
-                    <p> اسم المنتج :  <span>   نظارة ذكية   </span></p>
-                    <p> <span> 14 </span> : رقم المنتج </p>
-                    <p>  <span> 78</span> : سعر المنتج </p>
-                    <button> شراء المنتج </button>
+                    <img class="img-product" src="images/optical/Layer 55.png">
+                    <div class="produt-info">
+                        <p> اسم المنتج : <span> نظارة ذكية </span></p>
+                        <p> <span> 2008 </span> : رقم المنتج </p>
+                        <p> <span> $1000</span> : سعرالمنتج </p>
+                    </div>
+                    <button> <img src="images/المنتجات/شراء المنتج.png"> </button>
                 </div>
                 <div>
-                    <img src="images/optical/Layer 54.png">
-                    <p> اسم المنتج :  <span>عدسة لاصقة  </span></p>
-                    <p> <span> 15 </span> : رقم المنتج </p>
-                    <p>  <span> 91 </span> : سعر المنتج </p>
-                    <button> شراء المنتج </button>
+                    <img class="img-product" src="images/optical/Layer 54.png">
+                    <div class="produt-info">
+                        <p> اسم المنتج : <span>عدسة لاصقة </span></p>
+                        <p> <span> 2009 </span> : رقم المنتج </p>
+                        <p> <span> $20 </span> : سعرالمنتج </p>
+                    </div>
+                    <button> <img src="images/المنتجات/شراء المنتج.png"> </button>
                 </div>
 
 
             </div>
             <div class="two">
 
-                <img src="images/audio/Layer 42.png">
-                <p> الرجاء التأكد من المنتج قبل عملية الشراء </p>
+                <img class="cart" src="images/audio/Layer 42.png">
+                <p> <img src="images/audio/check.png"> </p>
 
             </div>
 
@@ -403,16 +517,10 @@
         <div class="header">
 
             <img class="arrow" src="images/المنتجات/سهم.png">
-            <div>
-                <p> قائمة حول </p>
-                <img class = "list-name" src="images/about/Layer 17.png">
-            </div>
-
 
         </div>
 
         <div class="body">
-
             <div class="bg-transparent">
                 <p class="q"> </p>
                 <div>
@@ -426,7 +534,7 @@
 
         </div>
         <div class="footer">
-            <img src="images/المنتجات/شريط تحت.png">
+
         </div>
 
     </div>
@@ -434,94 +542,88 @@
     <div class="register">
 
         <div class="header">
-
             <img class="arrow" src="images/المنتجات/سهم.png">
-            <div>
-                <p> قائمة التسجيل </p>
-                <img class = "list-name" src="images/register/يد.png">
-            </div>
-
-
+            <img class="list-name-regester" src="images/paying/اسم القائمة.png">
         </div>
 
         <div class="body">
 
-            <div class = "one">
-
+            <div class="one">
 
                 <div class="left">
 
-                    <div class = "title">
-                        <p class = "p-one"> بيانات المنتج   </p>
-                        <p class = "p-two"> الرجاء التأكد أن البيانات  صحيحة </p>
-                     </div>
+                    <div class="title">
+                        <p class="p-one"> بيانات المنتج </p>
+                        <p class="p-two"> الرجاء التأكد أن البيانات صحيحة </p>
+                    </div>
 
-                    <label for = "nameProduct" > اسم المنتج : </label>
-                    <input class = "w-100" readonly type = "text" id = "nameProduct" name = "nameProduct" >
-                    <label for = "productNum" > رقم المنتج  </label>
-                    <input class = "w-100" readonly type = "text" id = "productNum" name = "productNum" >
-                    <label for = "productPrise" > سعر المنتج : </label>
-                    <input class = "w-100" readonly type = "text" id = "productPrise" name = "productPrise" >
-                    <label for = "kind" > نوع الاعاقة : </label>
-                    <input class = "w-100" readonly type = "text" id = "kind" name = "kind" >
-                    <label for = "lifeSpan" > العمر الافتراضي : </label>
-                    <input class = "w-100" value = "2 years" readonly type = "text" id = "lifeSpan" name = "lifeSpan" >
-                
+                    <label for="nameProduct"> اسم المنتج : </label>
+                    <input class="w-100" readonly type="text" id="nameProduct" name="nameProduct">
+                    <label for="productNum"> رقم المنتج </label>
+                    <input class="w-100" readonly type="text" id="productNum" name="productNum">
+                    <label for="productPrise"> سعرالمنتج : </label>
+                    <input class="w-100" readonly type="text" id="productPrise" name="productPrise">
+                    <label for="kind"> نوع الاعاقة : </label>
+                    <input class="w-100" readonly type="text" id="kind" name="kind">
+                    <label for="lifeSpan"> العمر الافتراضي : </label>
+                    <input class="w-100" value="2 years" readonly type="text" id="lifeSpan" name="lifeSpan">
+
                 </div>
 
-                 <div class="right">
+                <div class="right">
 
-                    <div class = "title">
-                       <p class = "p-one"> البيانات الاساسية</p>
-                       <p class = "p-two">  الرجاء التأكد من ادخال البيانات بشكل صحيح </p>
+                    <div class="title">
+                        <p class="p-one"> البيانات الاساسية</p>
+                        <p class="p-two"> الرجاء التأكد من ادخال البيانات بشكل صحيح </p>
                     </div>
 
-                    <label for = "name" >  الاسم بالكامل : </label>
-                    <input class = "w-100" type = "text" id = "name" name = "name" >
-                    <label for = "countryBirth" > بلد الجنسية : </label>
-                    <input class = "w-100" type = "text" id = "countryBirth" name = "countryBirth" >
-                    <label for = "id" > الرقم القومي : </label>
-                    <input class = "w-100" type = "number" id = "id" name = "id" >
-                    <label for = "birthDate" > تاريخ الميلاد :  </label>
-                    <input class = "w-100" type = "date" id = "birthDate" name = "birthDate" >
-                    <label for = "gendare" > النوع :  </label>
-                    <select class = "w-100"  id = "gendare" name = "gendare" >
-                        <option value = "male"> male </option>
-                        <option value = "female"> female </option>
+                    <label for="name"> الاسم بالكامل : </label>
+                    <input class="w-100" type="text" id="name" name="name">
+                    <label for="countryBirth"> بلد الجنسية : </label>
+                    <input class="w-100" type="text" id="countryBirth" name="countryBirth">
+                    <label for="id"> الرقم القومي : </label>
+                    <input class="w-100" type="number" id="id" name="id">
+                    <label for="birthDate"> تاريخ الميلاد : </label>
+                    <input class="w-100" type="date" id="birthDate" name="birthDate">
+                    <label for="gendare"> النوع : </label>
+                    <select class="w-100" id="gendare" name="gendare">
+                        <option value="male"> male </option>
+                        <option value="female"> female </option>
                     </select>
-                    <label for = "address" > العنوان :  </label>
-                    <input class = "w-100" type = "text" id = "address" name = "address" placeholder="(الدولة - المحافظة - المركز - المدينه / القرية - الشارع )" >
-                   
-                    <label for = "phoneNum" >  رقم الموبايل </label>
-                    <div class = "div-input">
-                        <input class = "w-100" type = "number" id = "phoneNum" name = "phoneNum" > 
-                        <button> ارسال <img  src = "images/register/Layer 90.png"> </button>  
+                    <label for="address"> العنوان : </label>
+                    <input class="w-100" type="text" id="address" name="address"
+                        placeholder="(الدولة - المحافظة - المركز - المدينه / القرية - الشارع )">
+
+                    <label for="phoneNum"> رقم الموبايل </label>
+                    <div class="div-input">
+                        <input class="w-100" type="number" id="phoneNum" name="phoneNum">
+                        <button> ارسال <img src="images/register/Layer 90.png"> </button>
                     </div>
 
-                    <label for = "checkNum" >  رقم التحقق </label>
-                    <div class = "div-input">
-                        <input class = "w-100" type = "number" id = "checkNum" name = "checkNum" > 
-                        <button> تحقق </button>  
+                    <label for="checkNum"> رقم التحقق </label>
+                    <div class="div-input">
+                        <input class="w-100" type="number" id="checkNum" name="checkNum">
+                        <button> تحقق </button>
                     </div>
-                    
-                    <label for = "email" > البريد الالكتروني : </label>
-                    <input class = "w-100" type = "email" id = "email" name = "email" >
- 
+
+                    <label for="email"> البريد الالكتروني : </label>
+                    <input class="w-100" type="email" id="email" name="email">
+
 
                 </div>
 
             </div>
 
-            <div class = "two">
-                <img src = "images/register/احتفال صورة.png"> 
-                <img class = "to-paying" src = "images/register/استكمال.png"> 
+            <div class="two">
+                <img src="images/register/احتفال صورة.png">
+                <img class="to-paying" src="images/register/استكمال.png">
             </div>
 
 
 
         </div>
         <div class="footer">
-            <img src="images/المنتجات/شريط تحت.png"> 
+            <img src="images/المنتجات/شريط تحت.png">
         </div>
 
     </div>
@@ -531,33 +633,29 @@
         <div class="header">
 
             <img class="arrow" src="images/المنتجات/سهم.png">
-            <div>
-                <p> قائمة التسجيل </p>
-                <img class = "list-name" src="images/register/يد.png">
-            </div>
+            <img class="list-name-regester" src="images/paying/اسم القائمة.png">
 
 
         </div>
 
         <div class="body">
 
-            <div class = "one">
-                <p> طرق الدفع المتاحة  </p>
+            <div class="one">
+
+
             </div>
-            <div class = "two">
-                   <div class = "sec-one">
-                       <p>الدفع الكترونيا</p>
-                       <img src = "images/paying/Layer 94.png" > 
-                   </div>
-                   <div class = "sec-two">
-                       <p>الدفع عند الاستلام </p>
-                       <img src = "images/paying/Layer 93.png" >
-                   </div>
+            <div class="two">
+                <div class="sec-one">
+                    <img src="images/paying/الدفع الكترونيا.png">
+                </div>
+                <div class="sec-two">
+                    <img src="images/paying/الدفع عند الاستلام.png">
+                </div>
             </div>
 
         </div>
         <div class="footer">
-            <img src="images/المنتجات/شريط تحت.png"> 
+
         </div>
 
     </div>
@@ -567,33 +665,30 @@
         <div class="header">
 
             <img class="arrow" src="images/المنتجات/سهم.png">
-            <div>
-                <p> قائمة التسجيل </p>
-                <img class = "list-name" src="images/register/يد.png">
-            </div>
+            <img class="list-name-regester" src="images/paying/اسم القائمة.png">
 
 
         </div>
 
         <div class="body">
 
-            <div class = "one">
-                <p> طرق الاستلام  </p>
+            <div class="one">
+
+
             </div>
-            <div class = "two">
-                   <div class = "sec-one">
-                       <p> شحن للمنزل   </p>
-                       <img src = "images/paying/Layer 97.png" > 
-                   </div>
-                   <div class = "sec-two">
-                       <p>  داخل الشركة  </p>
-                       <img src = "images/paying/Layer 96.png" >
-                   </div>
+            <div class="two">
+                <div class="sec-one">
+                    <img src="images/paying/شحن للمنزل.png">
+                </div>
+                <div class="sec-two">
+                    <img src="images/paying/داخل الشركة.png">
+                </div>
             </div>
 
         </div>
         <div class="footer">
-            <img src="images/المنتجات/شريط تحت.png"> 
+
+
         </div>
 
     </div>
@@ -603,24 +698,20 @@
         <div class="header">
 
             <img class="arrow" src="images/المنتجات/سهم.png">
-            <div>
-                <p> قائمة التسجيل </p>
-                <img class = "list-name" src="images/register/يد.png">
-            </div>
+            <img class="list-name-regester" src="images/paying/اسم القائمة.png">
 
 
         </div>
 
         <div class="body">
 
-            <div class = "one">
-                <p class = "p-one"> مبروك </p>
-                <p> تم تأكيد الطلب  </p>
+            <div class="one">
+                <img src="images/paying/تم التاكيد.png">
             </div>
 
         </div>
         <div class="footer">
-            <img src="images/المنتجات/شريط تحت.png"> 
+            <img src="images/المنتجات/شريط تحت.png">
         </div>
 
     </div>
@@ -630,46 +721,48 @@
         <div class="header">
 
             <img class="arrow" src="images/المنتجات/سهم.png">
-            <div>
-                <p> قائمة التسجيل </p>
-                <img class = "list-name" src="images/register/يد.png">
-            </div>
+            <img class="list-name-regester" src="images/paying/اسم القائمة.png">
 
 
         </div>
 
         <div class="body">
 
-            <div class = "one">
+            <div class="one">
 
-                 <div class="form">
+                <div class="form">
 
-                    <div class = "title">
-                       <p class = "p-one">  الدفع الكترونيا  </p>
-                       <p class = "p-two">  الرجاء التأكد من ادخال البيانات بشكل صحيح </p>
+                    <div class="title">
+                        <p class="p-one"> الدفع الكترونيا </p>
+                        <p class="p-two"> الرجاء التأكد من ادخال البيانات بشكل صحيح </p>
                     </div>
 
-                    <label for = "name" >   نوع البطاقة : </label>
-                    <input class = "w-100" type = "text" id = "name" name = "name" placeholder = "يتم إدخال نوع البطاقة التي تحملها" >
-                    <label for = "countryBirth" >  رقم البطاقة :   </label>
-                    <input class = "w-100" type = "number" id = "countryBirth" name = "countryBirth" placeholder = "يتم إدخال رقم مدى والمكون من 16 رقما والظاهر في مقدمة البطاقة" >
-                    <label for = "id" >  اسم حامل البطاقة  </label>
-                    <input class = "w-100" type = "text" id = "id" name = "id" placeholder = "يتم ادخال اسم صاحب بطاقة مدى والظاهر في مقدمة البطاقة" >
-                    <label for = "birthDate" > تاريخ الانتهاء  :  </label>
-                    <div>
-                        <input type="month"> 
+                    <label for="name"> نوع البطاقة : </label>
+                    <input class="w-100" type="text" id="cardType" name="name"
+                        placeholder="يتم إدخال نوع البطاقة التي تحملها">
+                    <label for="countryBirth"> رقم البطاقة : </label>
+                    <input class="w-100" type="number" id="cardNum" name="countryBirth"
+                        placeholder="يتم إدخال رقم مدى والمكون من 16 رقما والظاهر في مقدمة البطاقة">
+                    <label for="id"> اسم حامل البطاقة </label>
+                    <input class="w-100" type="text" id="name" name="id"
+                        placeholder="يتم ادخال اسم صاحب بطاقة مدى والظاهر في مقدمة البطاقة">
+                    <label for="birthDate"> تاريخ الانتهاء : </label>
+                    <div class="date-input">
+                        <input type="text" placeholder="الشهر ">
+                        <input type="text" placeholder="السنة">
+                    </div>
+                    <p class="p-date"> يتم إدخال تاريخ انتهاء بطاقة مدى والظاهر في مقدمة البطاقة </p>
+
+                    <label for="phoneNum"> رقم ( cvv/cvc ) : </label>
+                    <div class="div-input">
+                        <input class="w-100" type="number" id="phoneNum" name="phoneNum">
+                        <button> ارسال <img src="images/register/Layer 90.png"> </button>
                     </div>
 
-                    <label for = "phoneNum" >   رقم ( cvv/cvc ) :   </label>
-                    <div class = "div-input">
-                        <input class = "w-100" type = "number" id = "phoneNum" name = "phoneNum" > 
-                        <button> ارسال <img  src = "images/register/Layer 90.png"> </button>  
-                    </div>
-
-                    <label for = "checkNum" >  رقم التحقق </label>
-                    <div class = "div-input">
-                        <input class = "w-100" type = "number" id = "checkNum" name = "checkNum" > 
-                        <button> تحقق </button>  
+                    <label for="checkNum"> رقم التحقق </label>
+                    <div class="div-input">
+                        <input class="w-100" type="number" id="checkNum" name="checkNum">
+                        <button> تحقق </button>
                     </div>
 
 
@@ -677,15 +770,15 @@
 
             </div>
 
-            <div class = "two">
-                <img src = "images/register/احتفال صورة.png"> 
-                <img class = "to-confirmedElectron" src = "images/register/استكمال.png"> 
-                <img src = "images/register/احتفال صورة.png"> 
+            <div class="two">
+                <img src="images/register/احتفال صورة.png">
+                <img class="to-confirmedElectron" src="images/register/استكمال.png">
+                <img src="images/register/احتفال صورة.png">
             </div>
 
         </div>
         <div class="footer">
-            <img src="images/المنتجات/شريط تحت.png"> 
+            <img src="images/المنتجات/شريط تحت.png">
         </div>
 
     </div>
@@ -693,26 +786,147 @@
     <div class="confirmedElectron">
 
         <div class="header">
-
             <img class="arrow" src="images/المنتجات/سهم.png">
-            <div>
-                <p> قائمة التسجيل </p>
-                <img class = "list-name" src="images/register/يد.png">
-            </div>
-
-
+            <img class="list-name-regester" src="images/paying/اسم القائمة.png">
         </div>
 
         <div class="body">
 
-            <div class = "one">
-                <p class = "p-one"> مبروك </p>
-                <p> تم شراء المنتج     </p>
+            <div class="one">
+                <img src="images/paying/تم الشراء.png">
             </div>
 
         </div>
         <div class="footer">
-            <img src="images/المنتجات/شريط تحت.png"> 
+            <img src="images/المنتجات/شريط تحت.png">
+        </div>
+
+    </div>
+
+    <div class="dashboard">
+
+        <div class="dash-1">
+
+            <div class="header">
+                <img class="arrow" src="images/dashBoard_1/سهم.png">
+                <img class="list-name-regester" src="images/dashBoard_1/اسم القائمة.png">
+            </div>
+
+            <div class="body">
+
+                <div>
+                    <img class="img-one pointer" src="images/dashBoard_1/قائمة اضافة ترس.png">
+                    <img class="img-two pointer" src="images/dashBoard_1/قائمة الرئسية ترس.png">
+                    <img class="img-three pointer" src="images/dashBoard_1/قائمة الطلبات الترس.png">
+                </div>
+
+
+
+            </div>
+
+
+        </div>
+        <div class="dash-2">
+
+            <div class="header">
+                <img class="arrow" src="images/dashBoard_1/سهم.png">
+                <img class="list-name-regester" src="images/dashBoard_2/اسم القائمة.png">
+            </div>
+
+            <div class="body">
+
+                <h2> المشتريين عند الاستلام </h2>
+
+                <div class="table table_1">
+
+                    <div class="row">
+                        <div class="title">
+                            <p> الاسم </p>
+                            <p> الايميل</p>
+                            <p>رقم التلفون</p>
+                            <p>العنوان </p>
+                            <p> اسم المنتج </p>
+                            <p> رقم المنتج </p>
+                            <p> سعر المنتج </p>
+                            <p> مكان الاستلام </p>
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <h2> المشتريين بالدفع الالكتروني</h2>
+                <div class="table table_2">
+
+                    <div class="row">
+                        <div class="title">
+                            <p> الاسم </p>
+                            <p> الايميل</p>
+                            <p>رقم التلفون</p>
+                            <p>العنوان </p>
+                            <p> اسم المنتج </p>
+                            <p> رقم المنتج </p>
+                            <p> سعر المنتج </p>
+                            <p> اسم صاحب البطاقة </p>
+                            <p> رقم البطاقة </p>
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+            <div class="footer">
+                <img src="images/المنتجات/شريط تحت.png">
+            </div>
+
+        </div>
+        <div class="dash-3">
+
+            <div class="header">
+                <img class="arrow" src="images/dashBoard_1/سهم.png">
+                <img class="list-name-regester" src="images/dashBoard_3/اسم القائمة.png">
+            </div>
+
+            <div class="body">
+
+                <div class="left">
+
+                    <div class="title">
+                        <p class="p-one"> بيانات المنتج </p>
+                    </div>
+
+                    <form method = "post"   enctype="multipart/form-data" >
+
+                        <label for="nameProduct"> اسم المنتج : </label>
+                        <input class="w-100" type="text">
+                        <label for="productNum"> رقم المنتج </label>
+                        <input class="w-100" type="text">
+                        <label for="productPrise"> سعرالمنتج : </label>
+                        <input class="w-100" type="number">
+                        <label for="productPic"> صورة المنتج : </label>
+                        <input class="w-100" type="file">
+                        <label for="kind"> نوع الاعاقة : </label>
+                        <select class="w-100">
+                            <option> منتجات سمعية </option>
+                            <option> منتجات بصرية </option>
+                            <option> منتجات صوتية </option>
+                            <option> منتجات جسدية </option>
+                        </select>
+
+                        <div>
+                            <button type = "submit" class="pointer"> add product </button>
+                        </div>
+
+                    </form>
+
+                </div>
+
+            </div>
+            <div class="footer">
+                <img src="images/المنتجات/شريط تحت.png">
+            </div>
+
         </div>
 
     </div>
